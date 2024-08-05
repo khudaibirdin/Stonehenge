@@ -1,0 +1,25 @@
+{{define "title"}}
+Авторизация
+{{end}}
+
+{{define "links"}}
+<link rel="stylesheet" href="static/css/auth.css">
+{{end}}
+
+{{define "content"}}
+<div class="login-container">
+    <h2>Авторизация</h2>
+    <form action="/login" method="POST">
+        <div class="input-group">
+            <label for="username">Логин</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="input-group">
+            <label for="password">Пароль</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit">Войти</button>
+    </form>
+</div>
+{{end}}
+

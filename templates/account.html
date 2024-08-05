@@ -1,0 +1,18 @@
+{{define "title"}}
+Аккаунт
+{{end}}
+
+{{define "links"}}
+<link rel="stylesheet" href="static/css/account.css">
+{{end}}
+
+{{define "content"}}
+<div class="account-container">
+    <h2>Информация об аккаунте</h2>
+    <p><strong>Username:</strong> {{.Username}}</p>
+    <form action="/logout" method="POST">
+        <button type="submit">Выйти</button>
+    </form>
+</div>
+{{end}}
+
